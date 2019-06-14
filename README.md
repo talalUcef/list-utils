@@ -1,2 +1,2 @@
 # list-utils
-List utils
+Class util to help partitioning a list
