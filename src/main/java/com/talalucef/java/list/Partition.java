@@ -20,11 +20,10 @@ public final class Partition<T> extends AbstractList<List<T>> {
      * Return list partitioned into chunkSize sublist
      * if the chunk number is greater than the list size, return same list as partition
      *
-     * @param list
-     * @param chunkSize
-     * @param <T>
-     * @return Partition<T>
-     * @throw InvalidParameterException if chunkSize <= 0 or list is null
+     * @param list      : List to be partitioned
+     * @param chunkSize : Size of partition
+     * @return Partition : List of sublist
+     * @throws InvalidParameterException if chunkSize less than or equal to 0 or list is null
      */
     public static <T> Partition<T> ofSize(List<T> list, int chunkSize) {
 

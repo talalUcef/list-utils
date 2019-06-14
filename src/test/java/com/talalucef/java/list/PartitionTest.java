@@ -60,12 +60,12 @@ public final class PartitionTest {
 
         final Partition<T> lists = Partition.ofSize(list, chunkSize);
 
-        final int partitionSNumber = getPartitionsNumber(list, chunkSize);
+        final int partitionsNumber = getPartitionsNumber(list, chunkSize);
 
         LOG.debug("List of {} elements is partitioned into {} partition of chunk {}",
-                list.size(), partitionSNumber, chunkSize);
+                list.size(), partitionsNumber, chunkSize);
 
-        return partitionSNumber == lists.size();
+        return partitionsNumber == lists.size();
     }
 
     private <T> int getPartitionsNumber(final List<T> list, final int chunkSize) {
